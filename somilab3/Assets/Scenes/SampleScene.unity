@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audio:
-  - {fileID: 8300000, guid: 95f3c5917f67284469028012dd56677e, type: 3}
+  - {fileID: 8300000, guid: 9e4daa44f0d28504281c1031c36ee24d, type: 3}
   maxAudioSource: 1
   minVol: 0
   maxVol: 0
