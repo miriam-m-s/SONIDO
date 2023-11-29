@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{62c363dc-fe4b-4a55-8579-6648580f1f07}">
-		<property name="assetPath">
-			<value>Steps/Snow/snowStep6.wav</value>
-		</property>
+	<object class="AudioFile" id="{ff47dd8c-9095-4740-ae34-4821066323eb}">
+		<property name="assetPath" />
 		<property name="frequencyInKHz">
 			<value>48</value>
 		</property>
@@ -11,7 +9,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.76685416666666661</value>
+			<value>1.1522291666666666</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{48c8b148-92d1-402c-850b-b306daea3ec7}</destination>
