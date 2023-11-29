@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{ff47dd8c-9095-4740-ae34-4821066323eb}">
+	<object class="AudioFile" id="{379d6fa3-3929-4d8e-bfa8-63c63fb2691b}">
 		<property name="assetPath">
-			<value>Steps/Snow/snowStep3.wav</value>
+			<value>Steps/Wood/footsteps_player_carpet_03.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
 		</property>
 		<property name="channelCount">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<property name="length">
-			<value>1.1522291666666666</value>
+			<value>0.49995833333333334</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{48c8b148-92d1-402c-850b-b306daea3ec7}</destination>
