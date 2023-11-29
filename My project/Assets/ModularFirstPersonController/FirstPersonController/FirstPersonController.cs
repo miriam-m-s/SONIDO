@@ -99,7 +99,7 @@ public class FirstPersonController : MonoBehaviour
     public float jumpPower = 5f;
 
     // Internal Variables
-    private bool isGrounded = false;
+    public bool isGrounded = false;
 
     #endregion
 
@@ -130,7 +130,10 @@ public class FirstPersonController : MonoBehaviour
     private float timer = 0;
 
     #endregion
-
+    public float getVel()
+    {
+        return rb.velocity.magnitude;
+    }
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
