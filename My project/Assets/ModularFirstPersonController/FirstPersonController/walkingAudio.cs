@@ -14,12 +14,18 @@ public class walkingAudio : MonoBehaviour
 
 
     private FMOD.Studio.PARAMETER_ID speed_id;
+    private FMOD.Studio.PARAMETER_ID material_id;
 
     FirstPersonController movementController;
 
 
     bool onSand = true;
     bool playing;
+    private void OnCollisionEnter(Collision collision)
+    {
+        // Check if the collided GameObject has a specific tag.
+        SetMaterialParameter(collision.gameObject.tag);
+    }
     private void Start()
     {
         playing = false;
@@ -40,17 +46,38 @@ public class walkingAudio : MonoBehaviour
         stepEventDescription.getParameterDescriptionByName("speed", out speedDescript);
         speed_id = speedDescript.id;
 
+
+        FMOD.Studio.PARAMETER_DESCRIPTION materialDescript;
+        stepEventDescription.getParameterDescriptionByName("Material", out materialDescript);
+        material_id = materialDescript.id;
+
         //stepInstance.start();
-    
+
         stepInstance.start();
 
+    }
+     private void SetMaterialParameter(string tag)
+    {
+        // Map tags to Material enum values and set the parameter
+        switch (tag)
+        {
+            case "Snow":
+                stepInstance.setParameterByIDWithLabel(material_id, "Snow");
+                break;
+            case "Wood":
+                stepInstance.setParameterByIDWithLabel(material_id, "Wood");
+                break;      
+            default:
+               
+                break;
+        }
     }
     // Update is called once per frame
     void Update()
       
     {
       
-        stepInstance.setParameterByID(speed_id, movementController.getVel()*15);
+        stepInstance.setParameterByID(speed_id, movementController.getVel()*1.5f);
         ////if (Input.GetKey(KeyCode.Space))
         ////{
         ////    FMODUnity.RuntimeManager.PlayOneShot("event:/hipo");

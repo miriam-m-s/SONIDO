@@ -8157,6 +8157,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1044455565}
     m_Modifications:
+    - target: {fileID: 179008, guid: b7122bc32c69f8b429b34adc7e925898, type: 3}
+      propertyPath: m_TagString
+      value: Wood
+      objectReference: {fileID: 0}
     - target: {fileID: 401568, guid: b7122bc32c69f8b429b34adc7e925898, type: 3}
       propertyPath: m_RootOrder
       value: 238
@@ -40391,6 +40395,10 @@ PrefabInstance:
     - target: {fileID: 114186, guid: 334848cf38e9c4d4f8215fd7b99c3181, type: 3}
       propertyPath: m_Name
       value: SM_Env_Path_Wood_02_Snow 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114186, guid: 334848cf38e9c4d4f8215fd7b99c3181, type: 3}
+      propertyPath: m_TagString
+      value: Wood
       objectReference: {fileID: 0}
     - target: {fileID: 484144, guid: 334848cf38e9c4d4f8215fd7b99c3181, type: 3}
       propertyPath: m_RootOrder
@@ -87702,6 +87710,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1044455565}
     m_Modifications:
+    - target: {fileID: 114186, guid: 334848cf38e9c4d4f8215fd7b99c3181, type: 3}
+      propertyPath: m_TagString
+      value: Wood
+      objectReference: {fileID: 0}
     - target: {fileID: 484144, guid: 334848cf38e9c4d4f8215fd7b99c3181, type: 3}
       propertyPath: m_RootOrder
       value: 223

@@ -44,7 +44,7 @@ MonoBehaviour:
   Path: ../ProjectFMOD/diegoymiriam/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638368933747740707
+  lastModified: 638372448734319956
   FileSizes:
   - Name: Desktop
     Value: 852
@@ -71,7 +71,7 @@ MonoBehaviour:
   - {fileID: 3307006121947652618}
   StringsBanks:
   - {fileID: -5406888693613035072}
-  cacheTime: 638368933747740707
+  cacheTime: 638372448734319956
   cacheVersion: 131609
 --- !u!114 &3307006121947652618
 MonoBehaviour:
@@ -88,7 +88,7 @@ MonoBehaviour:
   Path: ../ProjectFMOD/diegoymiriam/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638368933747740707
+  lastModified: 638372448734299962
   FileSizes:
   - Name: Desktop
     Value: 113088
@@ -108,7 +108,7 @@ MonoBehaviour:
   Name: Material
   StudioPath: 
   Min: 0
-  Max: 2
+  Max: 3
   Default: 0
   ID:
     data1: 2874734914
@@ -119,6 +119,7 @@ MonoBehaviour:
   - Snow
   - Wood
   - Water
+  - Rock
   Exists: 1
 --- !u!114 &6465373275705609556
 MonoBehaviour:
@@ -135,7 +136,7 @@ MonoBehaviour:
   Name: speed
   StudioPath: 
   Min: 0
-  Max: 100
+  Max: 7
   Default: 0
   ID:
     data1: 3422481217
