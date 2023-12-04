@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{811b5673-ec83-42ca-9ce3-94c1074274e4}">
+		<property name="name">
+			<value>Temperature</value>
+		</property>
+		<relationship name="folder">
+			<destination>{f36e0bbd-6cb9-4491-b8b0-5ff68b39c2b4}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{5528ab51-85fd-42b9-a31f-c81070845341}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{5528ab51-85fd-42b9-a31f-c81070845341}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>3</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Base</value>
+			<value>MorCold</value>
+			<value>Cold</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
