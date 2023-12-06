@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wood
   - Snow
+  - Water
   layers:
   - Default
   - TransparentFX
