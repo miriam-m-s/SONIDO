@@ -1,5 +1,29 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8932389098194968403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ambientTemperature/SnowIntensity
+  m_EditorClassIdentifier: 
+  Name: SnowIntensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2676005290
+    data2: 1266491121
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-5743867867863273624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,10 +68,10 @@ MonoBehaviour:
   Path: ../ProjectFMOD/diegoymiriam/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638374868263610215
+  lastModified: 638374892590090843
   FileSizes:
   - Name: Desktop
-    Value: 992
+    Value: 1006
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -73,7 +97,7 @@ MonoBehaviour:
   - {fileID: 3307006121947652618}
   StringsBanks:
   - {fileID: -5406888693613035072}
-  cacheTime: 638374868263610215
+  cacheTime: 638374892590090843
   cacheVersion: 131609
 --- !u!114 &955235729398278850
 MonoBehaviour:
@@ -117,10 +141,10 @@ MonoBehaviour:
   Path: ../ProjectFMOD/diegoymiriam/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638374868263595116
+  lastModified: 638374892590080850
   FileSizes:
   - Name: Desktop
-    Value: 3141728
+    Value: 3795488
   Exists: 1
 --- !u!114 &4336464127101314148
 MonoBehaviour:
@@ -146,7 +170,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 8051963574597528455}
+  - {fileID: -8932389098194968403}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -201,31 +225,4 @@ MonoBehaviour:
   Type: 0
   IsGlobal: 0
   Labels: []
-  Exists: 1
---- !u!114 &8051963574597528455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/ambientTemperature/Temperature
-  m_EditorClassIdentifier: 
-  Name: Temperature
-  StudioPath: 
-  Min: 0
-  Max: 2
-  Default: 0
-  ID:
-    data1: 266912141
-    data2: 4282972203
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Base
-  - MorCold
-  - Cold
   Exists: 1
