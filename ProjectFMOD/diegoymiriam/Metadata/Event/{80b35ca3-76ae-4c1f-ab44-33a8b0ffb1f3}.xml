@@ -31,6 +31,9 @@
 		<relationship name="timeline">
 			<destination>{72ce43a7-d3eb-4940-99b0-e2cb933ffd16}</destination>
 		</relationship>
+		<relationship name="banks">
+			<destination>{6216538a-46ff-413f-85a0-1bb9f95d6148}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixer" id="{a6ac2f36-8dfe-436a-b08f-7fcc4c37574e}">
 		<relationship name="masterBus">
@@ -67,6 +70,9 @@
 		<relationship name="modules">
 			<destination>{1c29c392-4e1a-48b6-9006-6600086ee7d6}</destination>
 		</relationship>
+		<relationship name="markers">
+			<destination>{a5692008-7292-4f82-ac92-f49d30c1f04a}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{3882691f-6201-460a-a62b-dce7a08d7b98}">
 		<relationship name="effectChain">
@@ -89,8 +95,23 @@
 		<property name="length">
 			<value>2</value>
 		</property>
+		<property name="volume">
+			<value>3</value>
+		</property>
+		<property name="polyphony">
+			<value>3</value>
+		</property>
+		<property name="soundStealing">
+			<value>3</value>
+		</property>
 		<property name="maximumTimeBetweenSounds">
 			<value>8000</value>
+		</property>
+		<property name="spawnRate">
+			<value>400</value>
+		</property>
+		<property name="maximumScatterDistance">
+			<value>4</value>
 		</property>
 		<relationship name="sound">
 			<destination>{a6784f06-47a6-4e9f-ab2f-3a5f72704285}</destination>
@@ -110,6 +131,20 @@
 			<destination>{3882691f-6201-460a-a62b-dce7a08d7b98}</destination>
 		</relationship>
 	</object>
+	<object class="LoopRegion" id="{a5692008-7292-4f82-ac92-f49d30c1f04a}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>2</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{72ce43a7-d3eb-4940-99b0-e2cb933ffd16}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{e844e768-8ac7-4b6c-924c-6c2671606b13}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{a6d876bc-acfe-414b-b76b-e7f85e2ef858}">
 		<relationship name="effects">
 			<destination>{e8a28a85-455e-4414-ba8a-062a1d161bb4}</destination>
@@ -119,6 +154,9 @@
 	<object class="MixerBusPanner" id="{cf4861fb-e8b3-48a6-92eb-27f9bf0cef36}" />
 	<object class="MixerBusFader" id="{8e0ce5c8-9426-4158-8922-8aec9937e6b6}" />
 	<object class="MultiSound" id="{a6784f06-47a6-4e9f-ab2f-3a5f72704285}">
+		<property name="playlistMode">
+			<value>1</value>
+		</property>
 		<relationship name="sounds">
 			<destination>{dc08d314-f80b-48a0-abc1-5183ae147a02}</destination>
 			<destination>{d445e781-3dcd-4dc5-af51-e3cd494af3e6}</destination>

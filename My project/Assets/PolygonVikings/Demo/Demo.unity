@@ -4304,19 +4304,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: fabff3cbe4a4be24a90f7b23e155e025, type: 3}
       propertyPath: VelocityModule.y.scalar
-      value: .300000012
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: fabff3cbe4a4be24a90f7b23e155e025, type: 3}
       propertyPath: ShapeModule.radius.value
-      value: .100000001
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: fabff3cbe4a4be24a90f7b23e155e025, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: .200000003
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: fabff3cbe4a4be24a90f7b23e155e025, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: .100000001
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 19900000, guid: fabff3cbe4a4be24a90f7b23e155e025, type: 3}
       propertyPath: m_RenderMode
@@ -55421,6 +55421,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e8bc6160ccf0e9b4e950bcb511403374, type: 2}
+    - target: {fileID: 8029707360243616470, guid: fabff3cbe4a4be24a90f7b23e155e025, type: 3}
+      propertyPath: OverrideAttenuation
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
