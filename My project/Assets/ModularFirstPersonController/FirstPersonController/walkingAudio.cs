@@ -66,9 +66,12 @@ public class walkingAudio : MonoBehaviour
                 break;
             case "Wood":
                 stepInstance.setParameterByIDWithLabel(material_id, "Wood");
-                break;      
+                break;
+            case "Water":
+                stepInstance.setParameterByIDWithLabel(material_id, "Water");
+                break;
             default:
-               
+             
                 break;
         }
     }

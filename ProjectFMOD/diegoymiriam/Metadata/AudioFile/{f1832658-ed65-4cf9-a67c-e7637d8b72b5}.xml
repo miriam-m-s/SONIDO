@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f1832658-ed65-4cf9-a67c-e7637d8b72b5}">
+		<property name="assetPath">
+			<value>Steps/Wood/WoodWalk4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.62695833333333328</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{48c8b148-92d1-402c-850b-b306daea3ec7}</destination>
+		</relationship>
+	</object>
+</objects>
