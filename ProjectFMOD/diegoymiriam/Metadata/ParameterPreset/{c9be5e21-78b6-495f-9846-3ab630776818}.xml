@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{c9be5e21-78b6-495f-9846-3ab630776818}">
+		<property name="name">
+			<value>Obstruccion</value>
+		</property>
+		<relationship name="folder">
+			<destination>{f36e0bbd-6cb9-4491-b8b0-5ff68b39c2b4}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{2ed512d3-af1d-4db6-99d9-942471f56d6a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{2ed512d3-af1d-4db6-99d9-942471f56d6a}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

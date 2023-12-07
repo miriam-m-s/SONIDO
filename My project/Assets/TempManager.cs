@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class TempManager : MonoBehaviour
 {
+    public GameObject lowPass;
+
+    public float minLowPassValue;
+    public float maxLowPassValue;
+    private float lowPassValue;
+
     public ParticleSystem fog;
     public ParticleSystem snow;
     int maxEmissionFog = 100;
     int maxEmissionSnow = 2880;
     public float intensity = 0.0f;
+
     [SerializeField]
     FMODUnity.EventReference tempEventRef;
-
-
-
     private FMOD.Studio.EventInstance TempInstance;
-
-
     private FMOD.Studio.PARAMETER_ID intensity_id;
+
     void Start()
     {
         // Asigna las referencias de las partículas correctamente
@@ -32,14 +35,9 @@ public class TempManager : MonoBehaviour
         TempInstance.getDescription(out tempEventDescription);
 
 
-
-
         FMOD.Studio.PARAMETER_DESCRIPTION speedDescript;
         tempEventDescription.getParameterDescriptionByName("SnowIntensity", out speedDescript);
         intensity_id = speedDescript.id;
-
-
-
 
         TempInstance.start();
         StartCoroutine(ChangeIntensityRoutine());
@@ -97,12 +95,36 @@ public class TempManager : MonoBehaviour
         // Modifica el canal alfa del color
         colorActual.a = (float)(intensity * 0.5);  // Establece el canal alfa a 0.5 (50% de transparencia)
         mainModule.startColor = colorActual;
-        Debug.Log(colorActual);
+        //Debug.Log(colorActual);
 
         // Asigna el nuevo color al sistema de partículas
         mainModule.startColor = colorActual;
 
         var snowMain = snow.emission;
         snowMain.rateOverTime = (int)(maxEmissionSnow * intensity);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == lowPass.name)
+        {
+            lowPassValue = Random.Range(minLowPassValue, maxLowPassValue);
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.name == lowPass.name)
+        {
+            TempInstance.setParameterByName("Obstruccion", lowPassValue);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.name == lowPass.name)
+        {
+            TempInstance.setParameterByName("Obstruccion", 0);
+        }
     }
 }
