@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d6ec6acc-75ac-4c3b-8432-220d845f950e}">
+		<property name="assetPath">
+			<value>Torch/fogoso4.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>5.04</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{48c8b148-92d1-402c-850b-b306daea3ec7}</destination>
+		</relationship>
+	</object>
+</objects>

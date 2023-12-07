@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{f8a9c48d-da62-4ad8-b77a-e3e6b1c7fb85}">
+		<property name="assetPath">
+			<value>Torch/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{48c8b148-92d1-402c-850b-b306daea3ec7}</destination>
+		</relationship>
+	</object>
+</objects>
