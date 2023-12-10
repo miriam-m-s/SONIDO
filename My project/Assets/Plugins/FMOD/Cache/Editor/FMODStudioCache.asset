@@ -24,34 +24,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-8571437329604980328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/bar
-  m_EditorClassIdentifier: 
-  Path: event:/bar
-  Guid:
-    Data1: 2026628278
-    Data2: 1170449453
-    Data3: 828966831
-    Data4: 1347782749
-  Banks:
-  - {fileID: 3307006121947652618}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 6797353302989288597}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 58536
 --- !u!114 &-5743867867863273624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,10 +68,10 @@ MonoBehaviour:
   Path: ../ProjectFMOD/diegoymiriam/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638378116424771683
+  lastModified: 638378147329006754
   FileSizes:
   - Name: Desktop
-    Value: 1168
+    Value: 1214
   Exists: 1
 --- !u!114 &-5258308025656349001
 MonoBehaviour:
@@ -125,6 +97,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-4206159813582240750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bar
+  m_EditorClassIdentifier: 
+  Path: event:/Bar
+  Guid:
+    Data1: 2026628278
+    Data2: 1170449453
+    Data3: 828966831
+    Data4: 1347782749
+  Banks:
+  - {fileID: 3307006121947652618}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6824989661285324694}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 58536
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,13 +145,14 @@ MonoBehaviour:
   - {fileID: 955235729398278850}
   - {fileID: 4336464127101314148}
   - {fileID: 2465214861493106192}
-  - {fileID: -8571437329604980328}
+  - {fileID: 6021975045607636848}
+  - {fileID: -4206159813582240750}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3307006121947652618}
   StringsBanks:
   - {fileID: -5406888693613035072}
-  cacheTime: 638378116424771683
+  cacheTime: 638378147329006754
   cacheVersion: 131609
 --- !u!114 &955235729398278850
 MonoBehaviour:
@@ -222,10 +223,10 @@ MonoBehaviour:
   Path: ../ProjectFMOD/diegoymiriam/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638378116424761680
+  lastModified: 638378147328993481
   FileSizes:
   - Name: Desktop
-    Value: 5362592
+    Value: 6663744
   Exists: 1
 --- !u!114 &4336464127101314148
 MonoBehaviour:
@@ -284,6 +285,33 @@ MonoBehaviour:
   - Water
   - Rock
   Exists: 1
+--- !u!114 &6021975045607636848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Beach
+  m_EditorClassIdentifier: 
+  Path: event:/Beach
+  Guid:
+    Data1: -1716187005
+    Data2: 1188780037
+    Data3: -1200448126
+    Data4: 1794029169
+  Banks:
+  - {fileID: 3307006121947652618}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 97731
 --- !u!114 &6465373275705609556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,7 +336,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &6797353302989288597
+--- !u!114 &6824989661285324694
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -318,7 +346,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/bar/multiband
+  m_Name: parameter:/Bar/multiband
   m_EditorClassIdentifier: 
   Name: multiband
   StudioPath: 
