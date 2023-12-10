@@ -24,7 +24,7 @@ public class barSonido : MonoBehaviour
         FMOD.Studio.PARAMETER_DESCRIPTION multiband;
         barEventDescription.getParameterDescriptionByName("multiband", out multiband);
         multiban_id = multiband.id;
-
+        BarInstance.start();
         // No necesitas llamar a BarInstance.start() aquí si estás controlando la reproducción desde el Timeline.
     }
 
@@ -34,7 +34,7 @@ public class barSonido : MonoBehaviour
         {
             float distancia = Vector3.Distance(transform.position, personaje.position);
             BarInstance.setParameterByID(multiban_id, 0);
-            Debug.Log("DISTANCIA " + distancia);
+
 
             if (distancia < offset)
             {
