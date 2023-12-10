@@ -4,49 +4,65 @@ using UnityEngine.Playables;
 
 public class barSonido : MonoBehaviour
 {
+
+    FMODUnity.StudioEventEmitter barEmmitter;
+    private FMOD.Studio.EventInstance barInstance;
+
     // Referencia al transform del personaje (asegúrate de asignarla desde el Inspector)
     public Transform personaje;
-    public float offset=5.0f;
+    public float offset = 5.0f;
     [SerializeField]
-    FMODUnity.EventReference tempEventRef;
-    private FMOD.Studio.EventInstance BarInstance;
+
     private FMOD.Studio.PARAMETER_ID multiban_id;
-    float multi=0f;
+    float multi = 0f;
+    private FMOD.Studio.PARAMETER_ID _2D_ID;
 
-    void Start()
+    private void Start()
     {
-      
+        barEmmitter = this.gameObject.GetComponent<FMODUnity.StudioEventEmitter>();
 
-        FMOD.Studio.EventDescription barEventDescription;
-        FMOD.Studio.EventInstance BarInstance = RuntimeManager.CreateInstance(tempEventRef);
-        BarInstance.getDescription(out barEventDescription);
+        barInstance = barEmmitter.EventInstance;
 
-        FMOD.Studio.PARAMETER_DESCRIPTION multiband;
-        barEventDescription.getParameterDescriptionByName("multiband", out multiband);
-        multiban_id = multiband.id;
-        BarInstance.start();
-        // No necesitas llamar a BarInstance.start() aquí si estás controlando la reproducción desde el Timeline.
+        FMOD.Studio.EventDescription _2DEventDescription;
+        barInstance.getDescription(out _2DEventDescription);
+
+        FMOD.Studio.PARAMETER_DESCRIPTION _2DParameterDesc;
+
+        _2DEventDescription.getParameterDescriptionByName("MariCarmen", out _2DParameterDesc);
+
+        _2D_ID = _2DParameterDesc.id;
     }
 
+
+    void changeMultiBand()
+    {
+       
+        barInstance.setParameterByID(_2D_ID, 0.0f);
+
+        float distancia = Vector3.Distance(transform.position, personaje.position);
+
+
+        if (distancia < offset)
+        {
+            multi = Mathf.Clamp(1 - (distancia/offset), 0.0f, 1.0f);
+
+            Debug.Log("Yo queria hacelo asi u poco smoth: " + multi);
+            //    //barInstance.setParameterByID(multiban_id, multi);
+            barInstance.setParameterByID(_2D_ID, 1.0f);
+      
+        }
+        
+
+        
+
+
+
+    }
+
+    // Update is called once per frame
     void Update()
     {
-        if (personaje != null)
-        {
-            float distancia = Vector3.Distance(transform.position, personaje.position);
-            BarInstance.setParameterByID(multiban_id, 0);
-
-
-            if (distancia < offset)
-            {
-                float smoothstepValue = Mathf.SmoothStep(0f, offset, distancia);
-                multi = 1f - smoothstepValue;
-                BarInstance.setParameterByID(multiban_id, multi);
-            }
-        }
-        else
-        {
-            Debug.LogError("La referencia al personaje no está asignada en el Inspector.");
-        }
+        changeMultiBand();
     }
 }
 
