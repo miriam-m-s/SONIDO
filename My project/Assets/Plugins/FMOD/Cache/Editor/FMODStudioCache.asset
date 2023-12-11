@@ -68,10 +68,10 @@ MonoBehaviour:
   Path: ../ProjectFMOD/diegoymiriam/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638378294655778326
+  lastModified: 638379188801987911
   FileSizes:
   - Name: Desktop
-    Value: 1214
+    Value: 1296
   Exists: 1
 --- !u!114 &-5258308025656349001
 MonoBehaviour:
@@ -147,13 +147,40 @@ MonoBehaviour:
   - {fileID: 2465214861493106192}
   - {fileID: 6021975045607636848}
   - {fileID: -4206159813582240750}
+  - {fileID: 5577136407904483299}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3307006121947652618}
   StringsBanks:
   - {fileID: -5406888693613035072}
-  cacheTime: 638378294655778326
+  cacheTime: 638379188801987911
   cacheVersion: 131609
+--- !u!114 &363534749326784998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/cubo/Material_cube
+  m_EditorClassIdentifier: 
+  Name: Material_cube
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1675702298
+    data2: 425161176
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - water
+  - wood
+  Exists: 1
 --- !u!114 &955235729398278850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,10 +250,10 @@ MonoBehaviour:
   Path: ../ProjectFMOD/diegoymiriam/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638378294655758321
+  lastModified: 638379188801967964
   FileSizes:
   - Name: Desktop
-    Value: 6663744
+    Value: 6723616
   Exists: 1
 --- !u!114 &4336464127101314148
 MonoBehaviour:
@@ -254,6 +281,34 @@ MonoBehaviour:
   Parameters:
   - {fileID: -8932389098194968403}
   - {fileID: -5258308025656349001}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5577136407904483299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/cubo
+  m_EditorClassIdentifier: 
+  Path: event:/cubo
+  Guid:
+    Data1: 1027139468
+    Data2: 1124072918
+    Data3: -684474994
+    Data4: -1471627457
+  Banks:
+  - {fileID: 3307006121947652618}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 363534749326784998}
   MinDistance: 1
   MaxDistance: 20
   Length: 0

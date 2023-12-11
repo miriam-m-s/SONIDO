@@ -48,7 +48,7 @@ public class barSonido : MonoBehaviour
 
             Debug.Log("Yo queria hacelo asi u poco smoth: " + multi);
             //    //barInstance.setParameterByID(multiban_id, multi);
-            barInstance.setParameterByID(_2D_ID, 1.0f);
+            barInstance.setParameterByID(_2D_ID, multi);
       
         }
         

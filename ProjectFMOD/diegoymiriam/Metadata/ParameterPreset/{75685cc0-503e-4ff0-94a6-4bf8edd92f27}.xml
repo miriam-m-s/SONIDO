@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{75685cc0-503e-4ff0-94a6-4bf8edd92f27}">
+		<property name="name">
+			<value>Material_cube</value>
+		</property>
+		<relationship name="folder">
+			<destination>{f36e0bbd-6cb9-4491-b8b0-5ff68b39c2b4}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{820c987f-0626-435c-9e0a-a523017e79aa}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{820c987f-0626-435c-9e0a-a523017e79aa}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>water</value>
+			<value>wood</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
