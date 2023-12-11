@@ -67,6 +67,7 @@
 	<object class="GroupTrack" id="{b4fee475-1c58-4ab9-940a-7d1bfe43fc7f}">
 		<relationship name="modules">
 			<destination>{5be21dea-116a-422e-872c-b2f53503242d}</destination>
+			<destination>{d9cd5d65-652c-42b6-86a3-7f4feca2fde9}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{c20efef9-fb97-47f5-a883-8c578b17ec99}</destination>
@@ -80,6 +81,7 @@
 	<object class="ParameterProxy" id="{b803a19e-fc6a-4b64-9030-7bd4cc531620}">
 		<relationship name="modules">
 			<destination>{5be21dea-116a-422e-872c-b2f53503242d}</destination>
+			<destination>{d9cd5d65-652c-42b6-86a3-7f4feca2fde9}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{820c987f-0626-435c-9e0a-a523017e79aa}</destination>
@@ -110,6 +112,17 @@
 			<destination>{6e3faa3e-176e-4776-9237-5d20800a70b5}</destination>
 		</relationship>
 	</object>
+	<object class="SingleSound" id="{d9cd5d65-652c-42b6-86a3-7f4feca2fde9}">
+		<property name="start">
+			<value>1</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{206e8efa-4e96-414a-80ad-24911237a437}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{7836936b-84ce-4a02-a673-b4105282490f}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{c20efef9-fb97-47f5-a883-8c578b17ec99}">
 		<property name="name">
 			<value>Audio 1</value>
@@ -132,6 +145,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{11c6d289-3f49-4f47-8ef4-8517e97bcace}" />
 	<object class="MixerBusFader" id="{b1555392-461b-4954-b2fe-0854f19ad667}" />
+	<object class="RandomizerModulator" id="{206e8efa-4e96-414a-80ad-24911237a437}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>16</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{3c169e8e-7abe-4c7c-a90b-90a8e0fe586c}">
 		<relationship name="effects">
 			<destination>{2379bc6c-c37f-4a5e-97ab-38bde2003e14}</destination>
