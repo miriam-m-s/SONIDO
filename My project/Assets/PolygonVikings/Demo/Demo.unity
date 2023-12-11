@@ -15057,7 +15057,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 483328, guid: b2c17946abbfa74438665d416ccc234a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.79
+      value: 4.62
       objectReference: {fileID: 0}
     - target: {fileID: 483328, guid: b2c17946abbfa74438665d416ccc234a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15065,7 +15065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 483328, guid: b2c17946abbfa74438665d416ccc234a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 45.01
+      value: 44.41
       objectReference: {fileID: 0}
     - target: {fileID: 483328, guid: b2c17946abbfa74438665d416ccc234a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15100,10 +15100,10 @@ PrefabInstance:
       addedObject: {fileID: 1177128018}
     - targetCorrespondingSourceObject: {fileID: 124940, guid: b2c17946abbfa74438665d416ccc234a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1177128019}
+      addedObject: {fileID: 1177128020}
     - targetCorrespondingSourceObject: {fileID: 124940, guid: b2c17946abbfa74438665d416ccc234a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1177128020}
+      addedObject: {fileID: 1177128021}
   m_SourcePrefab: {fileID: 100100000, guid: b2c17946abbfa74438665d416ccc234a, type: 3}
 --- !u!1001 &371323864
 PrefabInstance:
@@ -46707,7 +46707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 24.301414
+      value: 43.53
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       propertyPath: m_LocalRotation.w
@@ -50588,20 +50588,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.84252524, y: 0.5001726, z: 0.84253275}
   m_Center: {x: 0.010927156, y: 0.2500863, z: 0.0000023841858}
---- !u!114 &1177128019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1177128012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcda83f74ff425c46b29104f740dc3c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  personaje: {fileID: 0}
-  offset: 5
 --- !u!114 &1177128020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50614,7 +50600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
+  CollisionTag: Water
   EventReference:
     Guid:
       Data1: 1027139468
@@ -50623,13 +50609,46 @@ MonoBehaviour:
       Data4: -1471627457
     Path: event:/cubo
   Event: 
-  PlayEvent: 0
-  StopEvent: 0
+  PlayEvent: 3
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   AllowNonRigidbodyDoppler: 0
   Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1177128021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177128012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 1027139468
+      Data2: 1124072918
+      Data3: -684474994
+      Data4: -1471627457
+    Path: event:/cubo
+  Event: 
+  PlayEvent: 3
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params:
+  - Name: Material_cube
+    Value: 1
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
