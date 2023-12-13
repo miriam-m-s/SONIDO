@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{64a41d84-d53b-49cf-897b-0e60baa1a94d}">
+	<object class="AudioFile" id="{20544dba-48da-4516-87a8-300ed4119990}">
 		<property name="assetPath">
-			<value>Respiracion1.mp3</value>
+			<value>Respiracion/Exhalar2.mp3</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>2.9279999999999999</value>
+			<value>1.704</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{48c8b148-92d1-402c-850b-b306daea3ec7}</destination>
