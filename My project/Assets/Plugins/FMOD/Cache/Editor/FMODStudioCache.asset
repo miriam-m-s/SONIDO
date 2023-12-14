@@ -68,10 +68,10 @@ MonoBehaviour:
   Path: ../ProjectFMOD/diegoymiriam/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638379884922065479
+  lastModified: 638381527114161382
   FileSizes:
   - Name: Desktop
-    Value: 1296
+    Value: 1422
   Exists: 1
 --- !u!114 &-5258308025656349001
 MonoBehaviour:
@@ -125,6 +125,81 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 58536
+--- !u!114 &-3730535922314455831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Brutus
+  m_EditorClassIdentifier: 
+  Path: event:/Brutus
+  Guid:
+    Data1: -710206723
+    Data2: 1283476640
+    Data3: 444813744
+    Data4: 20254400
+  Banks:
+  - {fileID: 3307006121947652618}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-2272087520956974838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Breath/Respiracion
+  m_EditorClassIdentifier: 
+  Name: Respiracion
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 3387134334
+    data2: 467979465
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-1018983542887681401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Breath/SnowIntensity
+  m_EditorClassIdentifier: 
+  Name: SnowIntensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2676005290
+    data2: 1266491121
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,12 +223,14 @@ MonoBehaviour:
   - {fileID: 6021975045607636848}
   - {fileID: -4206159813582240750}
   - {fileID: 5577136407904483299}
+  - {fileID: 6209873259497123984}
+  - {fileID: -3730535922314455831}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3307006121947652618}
   StringsBanks:
   - {fileID: -5406888693613035072}
-  cacheTime: 638379884922065479
+  cacheTime: 638381527114161382
   cacheVersion: 131609
 --- !u!114 &363534749326784998
 MonoBehaviour:
@@ -250,10 +327,10 @@ MonoBehaviour:
   Path: ../ProjectFMOD/diegoymiriam/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638379884922036207
+  lastModified: 638381527114106312
   FileSizes:
   - Name: Desktop
-    Value: 6723616
+    Value: 6952032
   Exists: 1
 --- !u!114 &4336464127101314148
 MonoBehaviour:
@@ -367,6 +444,35 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 97731
+--- !u!114 &6209873259497123984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Breath
+  m_EditorClassIdentifier: 
+  Path: event:/Breath
+  Guid:
+    Data1: -321183614
+    Data2: 1267003755
+    Data3: 1185276854
+    Data4: 1771886732
+  Banks:
+  - {fileID: 3307006121947652618}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1018983542887681401}
+  - {fileID: -2272087520956974838}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3200
 --- !u!114 &6465373275705609556
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7036,6 +7036,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: afd5b733d698c0a418406f7f6a487bbd, type: 3}
   m_PrefabInstance: {fileID: 1608549502}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &176092233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176092230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -710206723
+      Data2: 1283476640
+      Data3: 444813744
+      Data4: 20254400
+    Path: event:/Brutus
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &176515629
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9370,6 +9401,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
   m_PrefabInstance: {fileID: 1081123708}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &226012897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226012869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552336d9b8fb1e541953617757e5f723, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  breathEventRef:
+    Guid:
+      Data1: -321183614
+      Data2: 1267003755
+      Data3: 1185276854
+      Data4: 1771886732
+    Path: event:/Breath
 --- !u!1001 &226049825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46764,6 +46814,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4459864850019384750, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       insertIndex: -1
       addedObject: {fileID: 226012890}
+    - targetCorrespondingSourceObject: {fileID: 4459864850019384750, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 226012897}
     - targetCorrespondingSourceObject: {fileID: 4459864851310106424, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
       insertIndex: -1
       addedObject: {fileID: 141413094}
@@ -73445,6 +73498,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd5b733d698c0a418406f7f6a487bbd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 176092231}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: afd5b733d698c0a418406f7f6a487bbd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 176092233}
   m_SourcePrefab: {fileID: 100100000, guid: afd5b733d698c0a418406f7f6a487bbd, type: 3}
 --- !u!1001 &1611606714
 PrefabInstance:
