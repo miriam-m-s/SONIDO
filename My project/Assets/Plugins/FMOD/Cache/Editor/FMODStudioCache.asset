@@ -68,10 +68,10 @@ MonoBehaviour:
   Path: ../ProjectFMOD/diegoymiriam/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638381527114161382
+  lastModified: 638382716124785596
   FileSizes:
   - Name: Desktop
-    Value: 1422
+    Value: 1468
   Exists: 1
 --- !u!114 &-5258308025656349001
 MonoBehaviour:
@@ -225,12 +225,13 @@ MonoBehaviour:
   - {fileID: 5577136407904483299}
   - {fileID: 6209873259497123984}
   - {fileID: -3730535922314455831}
+  - {fileID: 3383649354534002091}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3307006121947652618}
   StringsBanks:
   - {fileID: -5406888693613035072}
-  cacheTime: 638381527114161382
+  cacheTime: 638382716124785596
   cacheVersion: 131609
 --- !u!114 &363534749326784998
 MonoBehaviour:
@@ -327,11 +328,38 @@ MonoBehaviour:
   Path: ../ProjectFMOD/diegoymiriam/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638381527114106312
+  lastModified: 638382716124760447
   FileSizes:
   - Name: Desktop
-    Value: 6952032
+    Value: 7065216
   Exists: 1
+--- !u!114 &3383649354534002091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bells
+  m_EditorClassIdentifier: 
+  Path: event:/Bells
+  Guid:
+    Data1: 1062951376
+    Data2: 1173878164
+    Data3: 1509861002
+    Data4: -586141313
+  Banks:
+  - {fileID: 3307006121947652618}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &4336464127101314148
 MonoBehaviour:
   m_ObjectHideFlags: 0
