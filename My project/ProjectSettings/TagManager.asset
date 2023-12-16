@@ -8,6 +8,7 @@ TagManager:
   - Snow
   - Water
   - Torch
+  - Rock
   layers:
   - Default
   - TransparentFX

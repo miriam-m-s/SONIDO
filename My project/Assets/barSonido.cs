@@ -28,7 +28,7 @@ public class barSonido : MonoBehaviour
 
         FMOD.Studio.PARAMETER_DESCRIPTION _2DParameterDesc;
 
-        _2DEventDescription.getParameterDescriptionByName("MariCarmen", out _2DParameterDesc);
+        _2DEventDescription.getParameterDescriptionByName("multi", out _2DParameterDesc);
 
         _2D_ID = _2DParameterDesc.id;
     }
