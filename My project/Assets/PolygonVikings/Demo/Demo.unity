@@ -12395,6 +12395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_DirtMound_08
       objectReference: {fileID: 0}
+    - target: {fileID: 110142, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     - target: {fileID: 416844, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
       propertyPath: m_RootOrder
       value: 231
@@ -18760,6 +18764,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_DirtMound_06
       objectReference: {fileID: 0}
+    - target: {fileID: 110142, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     - target: {fileID: 416844, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
       propertyPath: m_RootOrder
       value: 234
@@ -21984,6 +21992,10 @@ PrefabInstance:
     - target: {fileID: 110142, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
       propertyPath: m_Name
       value: SM_Env_DirtMound_09
+      objectReference: {fileID: 0}
+    - target: {fileID: 110142, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 416844, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
       propertyPath: m_RootOrder
@@ -37985,6 +37997,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1044455565}
     m_Modifications:
+    - target: {fileID: 110142, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     - target: {fileID: 416844, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
       propertyPath: m_RootOrder
       value: 236
@@ -49023,6 +49039,10 @@ PrefabInstance:
     - target: {fileID: 110142, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
       propertyPath: m_Name
       value: SM_Env_DirtMound_11
+      objectReference: {fileID: 0}
+    - target: {fileID: 110142, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 416844, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
       propertyPath: m_RootOrder
@@ -77154,6 +77174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_DirtMound_07
       objectReference: {fileID: 0}
+    - target: {fileID: 110142, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     - target: {fileID: 416844, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
       propertyPath: m_RootOrder
       value: 232
@@ -92339,6 +92363,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Env_DirtMound_10
       objectReference: {fileID: 0}
+    - target: {fileID: 110142, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     - target: {fileID: 416844, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
       propertyPath: m_RootOrder
       value: 141
@@ -96664,6 +96692,10 @@ PrefabInstance:
     - target: {fileID: 110142, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
       propertyPath: m_Name
       value: SM_Env_DirtMound_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 110142, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 416844, guid: c4df2e08bb8c96d41aaa49fc11180781, type: 3}
       propertyPath: m_RootOrder
