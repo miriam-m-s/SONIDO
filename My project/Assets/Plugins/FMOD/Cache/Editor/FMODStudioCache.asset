@@ -68,7 +68,7 @@ MonoBehaviour:
   Path: ../ProjectFMOD/diegoymiriam/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638382716124785596
+  lastModified: 638383228543643138
   FileSizes:
   - Name: Desktop
     Value: 1468
@@ -231,7 +231,7 @@ MonoBehaviour:
   - {fileID: 3307006121947652618}
   StringsBanks:
   - {fileID: -5406888693613035072}
-  cacheTime: 638382716124785596
+  cacheTime: 638383228543643138
   cacheVersion: 131609
 --- !u!114 &363534749326784998
 MonoBehaviour:
@@ -328,10 +328,10 @@ MonoBehaviour:
   Path: ../ProjectFMOD/diegoymiriam/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638382716124760447
+  lastModified: 638383228543608058
   FileSizes:
   - Name: Desktop
-    Value: 7065216
+    Value: 7064960
   Exists: 1
 --- !u!114 &3383649354534002091
 MonoBehaviour:
@@ -486,14 +486,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Breath
   Guid:
-    Data1: -321183614
-    Data2: 1267003755
-    Data3: 1185276854
-    Data4: 1771886732
+    Data1: -87937493
+    Data2: 1160346181
+    Data3: 1189221271
+    Data4: 1249940941
   Banks:
   - {fileID: 3307006121947652618}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters:
   - {fileID: -1018983542887681401}
